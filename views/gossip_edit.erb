@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>Gossip  - The Gossip Project</title>
+    </head>
+    <body>
+        <h1>Gossip : <%= params["id"] %></h1>
+        <form action='/gossips/<%= params["id"] %>/edit' method='POST'>
+            Saisi ici ton nom :  <input type='text' name='gossip_author' value="<%= gossip.author %>" readonly/><br/>
+            Balance ton potin : <input type='text' name='gossip_content' value="<%= gossip.content %>"/><br/>
+            <input type='submit'/>
+        </form>
+    </body>
+</html>
